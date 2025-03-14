@@ -7,12 +7,21 @@ import java.io.*;
 import javax.xml.stream.XMLStreamWriter;
 import java.util.List;
 
+/**
+ * Repositorio de libros en XML
+ */
 @Repository
 public class XmlBookRepository {
 
+    /**
+     * Rutal del archivo XML
+     */
     private static final String XML_FILE = "books.xml";
     private final File file;
 
+    /**
+     * Constructor de la clase
+     */
     public XmlBookRepository() {
         this.file = new File(XML_FILE);
         if (!file.exists()) {
@@ -24,6 +33,10 @@ public class XmlBookRepository {
         }
     }
 
+    /**
+     * Escribe los libros en formato XML
+     * @param blw Lista de libros
+     */
     public void toXml (List<BookRequest> blw) {
         try{
             FileOutputStream fos = new FileOutputStream(file);

@@ -10,15 +10,36 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * Servicio de libros
+ */
 @Service
 public class BookService {
+    // Loggers
     private static final Logger errorLogger = LoggerFactory.getLogger("ERROR_LOGGER");
     private static final Logger activityLogger = LoggerFactory.getLogger("ACTIVITY_LOGGER");
 
+    /**
+     * Cliente de MongoDB
+     */
     private final BookMongoClient bookMongoClient;
+
+    /**
+     * Cliente de Postgres
+     */
     private final BookPostgresClient bookPostgresClient;
+
+    /**
+     * Repositorio de libros en XML
+     */
     private final XmlBookRepository xmlBookRepository;
 
+    /**
+     * Constructor de la clase
+     * @param bookMongoClient Cliente de MongoDB
+     * @param bookPostgresClient Cliente de Postgres
+     * @param xmlBookRepository Repositorio de libros en XML
+     */
     public BookService(BookMongoClient bookMongoClient, BookPostgresClient bookPostgresClient, XmlBookRepository xmlBookRepository) {
         try {
             this.bookMongoClient = bookMongoClient;
@@ -32,6 +53,10 @@ public class BookService {
         }
     }
 
+    /**
+     * Guarda un libro en MongoDB
+     * @param bookRequest Libro a guardar
+     */
     public void saveBookInMongo(BookRequest bookRequest) {
         try {
             bookMongoClient.saveBook(bookRequest);
@@ -41,6 +66,10 @@ public class BookService {
         }
     }
 
+    /**
+     * Guarda un libro en Postgres
+     * @param bookRequest Libro a guardar
+     */
     public void saveBookInPostgres(BookRequest bookRequest) {
         try {
             bookPostgresClient.saveBook(bookRequest);
@@ -50,6 +79,10 @@ public class BookService {
         }
     }
 
+    /**
+     * Guarda un libro en MongoDB y Postgres
+     * @param bookRequest Libro a guardar
+     */
     public void saveBook(BookRequest bookRequest) {
         try {
             saveBookInMongo(bookRequest);
@@ -60,6 +93,10 @@ public class BookService {
         }
     }
 
+    /**
+     * Actualiza un libro en MongoDB
+     * @param id ID del libro
+     */
     public void deleteById(Long id) {
         try {
             bookMongoClient.deleteBookById(id);
@@ -70,6 +107,9 @@ public class BookService {
         }
     }
 
+    /**
+     * Elimina todos los libros
+     */
     public void deleteAll() {
         try {
             bookMongoClient.deleteAllBooks();
@@ -80,6 +120,11 @@ public class BookService {
         }
     }
 
+    /**
+     * Busca un libro en MongoDB
+     * @param id ID del libro
+     * @return Libro
+     */
     public BookRequest findOneMongo(Long id) {
         try {
             activityLogger.info("Buscando libro en mongo db" + id);
@@ -90,6 +135,10 @@ public class BookService {
         }
     }
 
+    /**
+     * Busca todos los libros
+     * @return Lista de libros
+     */
     public List<BookRequest> findAll() {
         try {
             activityLogger.info("Buscando todos los libros");
@@ -100,6 +149,9 @@ public class BookService {
         }
     }
 
+    /**
+     * Exporta los libros a XML
+     */
     public void writeInXml() {
         xmlBookRepository.toXml(findAll());
         activityLogger.info("Libros exportados a XML");
