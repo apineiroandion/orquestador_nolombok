@@ -10,3 +10,14 @@
 2025-03-14 13:15:19 - Buscando todos los libros
 2025-03-14 13:15:24 - Todos los libros eliminados
 2025-03-14 13:15:28 - Buscando todos los libros
+2025-03-14 13:34:49 - Instancia de BookService creada
+2025-03-14 13:35:17 - Libro guardo en MongoDB y Postgres1 El Quijote 19.99
+2025-03-14 13:35:19 - Buscando todos los libros
+2025-03-14 13:35:20 - Buscando todos los libros
+2025-03-14 13:36:17 - Buscando todos los libros
+2025-03-14 13:36:20 - Libro guardado en MongoDB1 El Quijote 19.99
+2025-03-14 13:36:20 - Libro guardado en Postgres1 El Quijote 19.99
+2025-03-14 13:36:20 - Libro guardo en MongoDB y Postgres1 El Quijote 19.99
+2025-03-14 13:36:21 - Buscando todos los libros
+2025-03-14 13:36:34 - Buscando todos los libros
+2025-03-14 13:36:34 - Libros exportados a XML
