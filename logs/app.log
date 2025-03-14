@@ -1,0 +1,68 @@
+2025-03-14 12:56:41 - Starting OrquestadorNolombokApplication using Java 23.0.2 with PID 12995 (/home/dam/IdeaProjects/orquestador_nolombok/target/classes started by dam in /home/dam/IdeaProjects/orquestador_nolombok)
+2025-03-14 12:56:41 - No active profile set, falling back to 1 default profile: "default"
+2025-03-14 12:56:42 - BeanFactory id=55bcb36c-ec22-3ed6-8f4b-0b117d2572b3
+2025-03-14 12:56:42 - Tomcat initialized with port 8080 (http)
+2025-03-14 12:56:42 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-14 12:56:42 - Starting service [Tomcat]
+2025-03-14 12:56:42 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-14 12:56:42 - Initializing Spring embedded WebApplicationContext
+2025-03-14 12:56:42 - Root WebApplicationContext: initialization completed in 429 ms
+2025-03-14 12:56:42 - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-14 12:56:42 - Tomcat started on port 8080 (http) with context path '/'
+2025-03-14 12:56:42 - Started OrquestadorNolombokApplication in 0.961 seconds (process running for 1.401)
+2025-03-14 12:56:55 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-14 12:56:55 - Initializing Servlet 'dispatcherServlet'
+2025-03-14 12:56:55 - Completed initialization in 1 ms
+2025-03-14 12:57:44 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-14 12:57:44 - Graceful shutdown complete
+2025-03-14 12:57:45 - Starting OrquestadorNolombokApplication using Java 23.0.2 with PID 13179 (/home/dam/IdeaProjects/orquestador_nolombok/target/classes started by dam in /home/dam/IdeaProjects/orquestador_nolombok)
+2025-03-14 12:57:45 - No active profile set, falling back to 1 default profile: "default"
+2025-03-14 12:57:45 - BeanFactory id=55bcb36c-ec22-3ed6-8f4b-0b117d2572b3
+2025-03-14 12:57:45 - Tomcat initialized with port 8080 (http)
+2025-03-14 12:57:45 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-14 12:57:45 - Starting service [Tomcat]
+2025-03-14 12:57:45 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-14 12:57:45 - Initializing Spring embedded WebApplicationContext
+2025-03-14 12:57:45 - Root WebApplicationContext: initialization completed in 427 ms
+2025-03-14 12:57:46 - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-14 12:57:46 - Tomcat started on port 8080 (http) with context path '/'
+2025-03-14 12:57:46 - Started OrquestadorNolombokApplication in 0.945 seconds (process running for 1.309)
+2025-03-14 12:58:42 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-14 12:58:42 - Initializing Servlet 'dispatcherServlet'
+2025-03-14 12:58:42 - Completed initialization in 1 ms
+2025-03-14 13:00:40 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-14 13:00:40 - Graceful shutdown complete
+2025-03-14 13:00:42 - Starting OrquestadorNolombokApplication using Java 23.0.2 with PID 13418 (/home/dam/IdeaProjects/orquestador_nolombok/target/classes started by dam in /home/dam/IdeaProjects/orquestador_nolombok)
+2025-03-14 13:00:42 - No active profile set, falling back to 1 default profile: "default"
+2025-03-14 13:00:42 - BeanFactory id=55bcb36c-ec22-3ed6-8f4b-0b117d2572b3
+2025-03-14 13:00:42 - Tomcat initialized with port 8080 (http)
+2025-03-14 13:00:42 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-14 13:00:42 - Starting service [Tomcat]
+2025-03-14 13:00:42 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-14 13:00:42 - Initializing Spring embedded WebApplicationContext
+2025-03-14 13:00:42 - Root WebApplicationContext: initialization completed in 429 ms
+2025-03-14 13:00:42 - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-14 13:00:42 - Tomcat started on port 8080 (http) with context path '/'
+2025-03-14 13:00:42 - Started OrquestadorNolombokApplication in 0.958 seconds (process running for 1.348)
+2025-03-14 13:01:01 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-14 13:01:01 - Initializing Servlet 'dispatcherServlet'
+2025-03-14 13:01:01 - Completed initialization in 0 ms
+2025-03-14 13:13:10 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-14 13:13:10 - Graceful shutdown complete
+2025-03-14 13:13:12 - Starting OrquestadorNolombokApplication using Java 23.0.2 with PID 14099 (/home/dam/IdeaProjects/orquestador_nolombok/target/classes started by dam in /home/dam/IdeaProjects/orquestador_nolombok)
+2025-03-14 13:13:12 - No active profile set, falling back to 1 default profile: "default"
+2025-03-14 13:13:12 - BeanFactory id=55bcb36c-ec22-3ed6-8f4b-0b117d2572b3
+2025-03-14 13:13:13 - Tomcat initialized with port 8080 (http)
+2025-03-14 13:13:13 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-14 13:13:13 - Starting service [Tomcat]
+2025-03-14 13:13:13 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-14 13:13:13 - Initializing Spring embedded WebApplicationContext
+2025-03-14 13:13:13 - Root WebApplicationContext: initialization completed in 424 ms
+2025-03-14 13:13:13 - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-14 13:13:13 - Tomcat started on port 8080 (http) with context path '/'
+2025-03-14 13:13:13 - Started OrquestadorNolombokApplication in 0.96 seconds (process running for 1.294)
+2025-03-14 13:13:22 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-14 13:13:22 - Initializing Servlet 'dispatcherServlet'
+2025-03-14 13:13:22 - Completed initialization in 1 ms
+2025-03-14 13:18:21 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-14 13:18:21 - Graceful shutdown complete

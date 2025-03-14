@@ -25,8 +25,8 @@ public class BookController {
     }
 
     @GetMapping("/xml")
-    public String getAllLibrosXml() {
-        return bookService.writeInXml();
+    public void getAllLibrosXml() {
+        bookService.writeInXml();
     }
 
     @PostMapping
