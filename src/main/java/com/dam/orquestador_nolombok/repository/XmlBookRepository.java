@@ -62,7 +62,7 @@ public class XmlBookRepository {
             writer.flush();
             writer.close();
             //guardo en books.xml
-            System.out.println(stringWriter.toString());
+            System.out.println(stringWriter);
             fos.write(stringWriter.toString().getBytes());
             fos.close();
         }catch (Exception e){

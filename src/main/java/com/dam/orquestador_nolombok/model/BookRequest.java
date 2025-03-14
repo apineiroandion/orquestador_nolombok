@@ -13,18 +13,12 @@ public class BookRequest {
     /**
      * Título del libro.
      */
-    private String titulo;
+    private final String titulo;
 
     /**
      * Precio del libro.
      */
-    private Double preco;
-
-    /**
-     * Constructor vacío.
-     */
-    public BookRequest() {
-    }
+    private final Double preco;
 
     /**
      * Constructor con parámetros.
@@ -52,15 +46,9 @@ public class BookRequest {
         return titulo;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
 
     public Double getPreco() {
         return preco;
     }
 
-    public void setPreco(Double preco) {
-        this.preco = preco;
-    }
 }

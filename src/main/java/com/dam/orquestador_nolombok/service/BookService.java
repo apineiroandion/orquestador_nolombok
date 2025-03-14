@@ -60,7 +60,7 @@ public class BookService {
     public void saveBookInMongo(BookRequest bookRequest) {
         try {
             bookMongoClient.saveBook(bookRequest);
-            activityLogger.info("Libro guardado en MongoDB" + bookRequest.getId() + " " + bookRequest.getTitulo() + " " + bookRequest.getPreco());
+            activityLogger.info("Libro guardado en MongoDB{} {} {}", bookRequest.getId(), bookRequest.getTitulo(), bookRequest.getPreco());
         } catch (Exception e) {
             errorLogger.error("Error al guardar libro en MongoDB", e);
         }
@@ -73,7 +73,7 @@ public class BookService {
     public void saveBookInPostgres(BookRequest bookRequest) {
         try {
             bookPostgresClient.saveBook(bookRequest);
-            activityLogger.info("Libro guardado en Postgres" + bookRequest.getId() + " " + bookRequest.getTitulo() + " " + bookRequest.getPreco());
+            activityLogger.info("Libro guardado en Postgres{} {} {}", bookRequest.getId(), bookRequest.getTitulo(), bookRequest.getPreco());
         } catch (Exception e) {
             errorLogger.error("Error al guardar libro en Postgres", e);
         }
@@ -87,7 +87,7 @@ public class BookService {
         try {
             saveBookInMongo(bookRequest);
             saveBookInPostgres(bookRequest);
-            activityLogger.info("Libro guardo en MongoDB y Postgres" + bookRequest.getId() + " " + bookRequest.getTitulo() + " " + bookRequest.getPreco());
+            activityLogger.info("Libro guardo en MongoDB y Postgres{} {} {}", bookRequest.getId(), bookRequest.getTitulo(), bookRequest.getPreco());
         } catch (Exception e) {
             errorLogger.error("Error al guardar libro", e);
         }
@@ -101,7 +101,7 @@ public class BookService {
         try {
             bookMongoClient.deleteBookById(id);
             bookPostgresClient.deleteBookById(id);
-            activityLogger.info("Libro eliminado" + id);
+            activityLogger.info("Libro eliminado{}", id);
         } catch (Exception e) {
             errorLogger.error("Error al eliminar libro", e);
         }
@@ -127,7 +127,7 @@ public class BookService {
      */
     public BookRequest findOneMongo(Long id) {
         try {
-            activityLogger.info("Buscando libro en mongo db" + id);
+            activityLogger.info("Buscando libro en mongo db{}", id);
             return bookMongoClient.getBookById(id);
         } catch (Exception e) {
             errorLogger.error("Error al buscar libro en MongoDB", e);
